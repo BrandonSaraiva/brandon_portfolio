@@ -1,0 +1,63 @@
+<svg width="1394" height="900" viewBox="0 0 1394 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1226_82" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1394" height="900">
+<g opacity="0.1" clip-path="url(#clip0_1226_82)">
+<path d="M1375.4 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1327.44 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1279.48 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1231.52 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1183.57 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1135.6 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1087.64 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M1039.68 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M991.72 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M943.758 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M895.798 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M847.839 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M799.876 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M751.91 899.231V0.11731" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M703.927 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M655.967 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M608.005 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M560.045 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M512.085 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M464.123 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M416.163 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M368.198 899.245L368.199 0.131104" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M320.241 899.245V0.131104" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M272.286 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M224.316 899.245L224.317 0.131104" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M176.353 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M128.394 899.244V0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M80.4346 899.245L80.4347 0.131104" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M32.4811 899.244L32.4812 0.130737" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 860.281L1505.39 860.283" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 805.458H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 750.633H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 695.808L1505.39 695.809" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 640.984H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 586.162H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 531.334L1505.39 531.336" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 476.511H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 421.688H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 366.863L1505.39 366.864" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 312.04H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 257.217H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 202.392L1505.39 202.393" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 147.568H1505.39" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.375305 92.7435L1505.39 92.7437" stroke="#727272" stroke-dasharray="6 6"/>
+<path d="M0.374939 37.9214L1505.39 37.9216" stroke="#727272" stroke-dasharray="6 6"/>
+</g>
+</mask>
+<g mask="url(#mask0_1226_82)">
+<ellipse cx="647.817" cy="445.982" rx="601.444" ry="407.411" fill="url(#paint0_radial_1226_82)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1226_82" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(647.816 445.982) rotate(90) scale(526.691 777.531)">
+<stop stop-color="#D9D9D9"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_1226_82">
+<rect width="1394" height="900" fill="white"/>
+</clipPath>
+</defs>
+</svg>
