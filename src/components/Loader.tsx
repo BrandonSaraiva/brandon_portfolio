@@ -97,7 +97,7 @@ export default function Loader({
 						variants={animate2}
 						onAnimationComplete={() => (setText2('hidden'), showLoading())}
 					>
-						Bem vindo ao meu portfolio 😄
+						Seja Bem vindo ao meu portfolio 😄
 					</motion.span>
 				</motion.div>
 			)}
