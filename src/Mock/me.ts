@@ -24,7 +24,7 @@ export const Me: Me = {
 	projects: [
 		{
 			name: 'Bot Telegram LotoFácil',
-			link: '',
+			link: 'https://github.com/BrandonSaraiva/Projeto-bot-telegram-Lotof-cil',
 			description:
 				'Um bot em Python que utiliza dados históricos de sorteios da loteria para analisar os números mais frequentemente sorteados em uma determinada data ao longo dos anos. Com base nessa análise, o bot gera uma previsão dos números com maior probabilidade de serem sorteados no dia atual. Essa ferramenta permite aumentar suas chances de acertar os números da loteria.',
 			tags: ['Google colab', 'Telegram', 'Bot', 'Web Scraping'],
@@ -32,7 +32,7 @@ export const Me: Me = {
 		},
 		{
 			name: 'Bot Telegram Home pc',
-			link: '',
+			link: 'https://github.com/BrandonSaraiva/Bot-Faz-Tudo',
 			description:
 				'App em Python para automatizar tarefas diárias. Com comandos simples, posso receber boletos, enviar arquivos para o Google Drive e acessar informações úteis, como previsão do tempo e últimos e-mails. Além disso, implementei funcionalidades para controlar remotamente o PC e reprodução de vídeos no YouTube. Essa experiência demonstra minha habilidade em desenvolver soluções práticas para otimizar a produtividade.',
 			tags: ['Google colab', 'Telegram', 'Bot', 'Web Scraping'],
@@ -41,7 +41,7 @@ export const Me: Me = {
 		},
 		{
 			name: 'Site cartoes presente',
-			link: '',
+			link: 'https://github.com/BrandonSaraiva/Site-Cartoes',
 			tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL'],
 			description:
 				'Um site que permite a geração de cartões presente personalizados de forma rápida e fácil. O site está conectado a uma base de dados criada com MongoDB, proporcionando um controle eficiente sobre os cartões registrados. Com essa ferramenta simples, é possível criar cartões presente únicos para diversas ocasiões, garantindo uma experiência especial para quem os recebe.',
@@ -60,6 +60,8 @@ export const Me: Me = {
 		{
 			name: 'Aplicativo pomodoro para celular',
 			link: 'https://github.com/BrandonSaraiva/APK-POMODORO',
+			description:
+				'Aplicativo de Pomodoro personalizado para uso pessoal, após ficar frustrado com opções disponíveis na Play Store. A interface é propositalmente única e excêntrica. O aplicativo está disponível para download em formato .pkg para uso no celular. Transformar o código Python em um executável .pkg foi desafiador, mas após aproximadamente 9 horas de trabalho, consegui fazer isso funcionar. O aplicativo combina diferentes elementos de interfaces e contadores encontrados na internet, resultando em uma experiência única.',
 			tags: ['Python', 'Kivy', 'Plyer'],
 			thumbnail: 'timer.jpeg',
 		},
