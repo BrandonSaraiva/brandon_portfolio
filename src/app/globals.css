@@ -3,58 +3,25 @@
 @tailwind utilities;
 
 html {
-	scroll-behavior: smooth;
-	@apply bg-white text-gray-900;
-}
-
-.circle {
-	position: fixed;
-	z-index: 10;
-	display: flex;
-	flex-flow: row;
-	align-content: center;
-	justify-content: center;
-	top: 0;
-	left: 0;
-	height: 20px;
-	width: 20px;
-	background-color: #000;
-	border-radius: 200px;
-	pointer-events: none;
-	color: #fff;
-	text-align: center;
-	font-size: 16px;
-}
-
-.cursorText {
-	flex: auto;
-	font-size: inherit;
-	pointer-events: none;
-	margin: auto;
-}
-
-.projectName {
-	background: #fff;
-	border-radius: 34px;
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-	padding: 12px 20px;
-	display: inline-block;
-	font-weight: 500;
-	font-size: 16px;
+  scroll-behavior: smooth;
+  @apply bg-white text-gray-900;
 }
 
 .slider {
-	animation: slider-text 20s linear infinite alternate;
+  animation: slider-text 20s linear infinite alternate;
 }
 
 @keyframes slider-text {
-	0% {
-		transform: translate3d(0, 0, 0);
-	}
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
 
-	100% {
-		transform: translate3d(-600px, 0, 0);
-	}
+  100% {
+    transform: translate3d(-600px, 0, 0);
+  }
+}
+
+::selection {
+  background-color: rgb(0 0 0 / 0.5);
+  color: #fff;
 }
