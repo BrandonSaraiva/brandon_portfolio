@@ -1,8 +1,13 @@
 import Header from "@/components/Header";
 import "./globals.css";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Roboto, JetBrains_Mono } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const jetBrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+});
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700"],
@@ -21,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${inter.variable} font-alt`}>
+      <body
+        className={`${roboto.variable} ${inter.variable} ${jetBrains.variable} font-alt`}
+      >
         {children}
       </body>
     </html>

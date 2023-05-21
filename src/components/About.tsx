@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Me } from "@/Mock/me";
 import { stylesWithCssVar } from "@/utils/motion";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
@@ -46,6 +47,7 @@ export const About = () => {
   return (
     <section
       ref={targetRef}
+      id="about"
       className="flex h-[350vh] w-full max-w-7xl flex-col items-center justify-start"
     >
       <div className="sticky top-[16.7vh] flex h-[66.8vh] w-full flex-col justify-center px-16">
@@ -57,12 +59,13 @@ export const About = () => {
           className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-black lg:w-fit lg:px-0"
         >
           <span className="text-4xl font-semibold text-black">
-            Olá prazer, Brandon Cardoso 👋🏻 😄
+            Olá visitante prazer <span className="text-xl"> 👋🏻 😄</span>
           </span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            Atualmente estou no terceiro semestre da faculdade de Data Science
-            and Artificial Intelligence pelo centro universitário IESB.
+            Me chamo {Me.name}, atualmente estou no terceiro semestre da
+            faculdade de Data Science and Artificial Intelligence pelo centro
+            universitário IESB.
           </span>
         </motion.p>
         <motion.p

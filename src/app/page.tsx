@@ -12,6 +12,9 @@ import Profile from "@/components/Profile";
 import Header from "@/components/Header";
 import { Me } from "@/Mock/me";
 import { About } from "@/components/About";
+import ProjectsFirst from "@/components/ProjectsFirst";
+import ProjectsTwo from "@/components/ProjectsTwo";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -66,6 +69,19 @@ export default function Home() {
         mass: 0.6,
       },
     },
+    footer: {
+      opacity: 1,
+      height: 10,
+      width: 10,
+      fontSize: "16px",
+      backgroundColor: "#fff",
+      x: mx,
+      y: my,
+      transition: {
+        type: "spring",
+        mass: 0.6,
+      },
+    },
     project: {
       opacity: 1,
       // backgroundColor: "rgba(255, 255, 255, 0.6)",
@@ -105,6 +121,16 @@ export default function Home() {
     setCursorVariant("hidden");
   }
 
+  function footerEnter(event: any) {
+    setCursorText("");
+    setCursorVariant("hidden");
+  }
+
+  function footerLeave(event: any) {
+    setCursorText("");
+    setCursorVariant("default");
+  }
+
   function projectEnter(event: any) {
     setCursorText("ver <br /> projeto");
     setCursorVariant("project");
@@ -115,12 +141,12 @@ export default function Home() {
     setCursorVariant("default");
   }
 
-  function contactEnter(event: any) {
-    setCursorText("👋");
+  function submitButtonEnter(event: any) {
+    setCursorText("✉️");
     setCursorVariant("contact");
   }
 
-  function contactLeave(event: any) {
+  function submitButtonLeave(event: any) {
     setCursorText("");
     setCursorVariant("default");
   }
@@ -173,11 +199,11 @@ export default function Home() {
     >
       {showContent && (
         <>
-          <Header />
+          {/* <Header /> */}
           {!isMobile && (
             <motion.div
               variants={variants}
-              className="pointer-events-none fixed left-0 top-0 z-10 flex h-[20px] w-[20px] flex-row content-center justify-center rounded-full bg-black text-center text-base text-white"
+              className="pointer-events-none fixed left-0 top-0 z-40 flex h-[20px] w-[20px] flex-row content-center justify-center rounded-full bg-black text-center text-base text-white"
               animate={cursorVariant}
               transition={spring}
             >
@@ -189,62 +215,31 @@ export default function Home() {
               />
             </motion.div>
           )}
-          <div className="mt-5 flex w-full flex-col items-center">
+          <div
+            className="mt-5 flex w-full flex-col items-center pb-52"
+            id="top"
+          >
             <Profile />
             <About />
-            <div className="-mt-60 flex w-full max-w-7xl flex-col gap-20 px-6">
-              <div className="flex flex-col">
-                <span className="font-light uppercase">Trabalhos</span>
-                <span className="mt-2 font-sans text-4xl font-semibold">
-                  Ultimos projetos
-                </span>
-                <small className="mt-4 max-w-md font-sans text-base text-gray-400">
-                  Projetos recentes, nos quais apliquei minhas habilidades como
-                  desenvolvedor, Cada projeto representa uma oportunidade de
-                  aprendizado e aplicação prática de conceitos-chave, resultando
-                  em soluções funcionais e inovadoras.
-                </small>
-              </div>
-              {Me.projects.map((project) => {
-                return (
-                  <div
-                    key={project.name}
-                    className="flex w-full flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-0"
-                  >
-                    <div className="flex flex-col">
-                      <p className="text-xl font-semibold lg:text-2xl">
-                        {project.name}
-                      </p>
-                      <span className="lg:text-md mt-2 text-gray-400 lg:max-w-md">
-                        {project.description}
-                      </span>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-5 text-sm "
-                      >
-                        ver github
-                      </a>
-                    </div>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="h-[245px] w-full overflow-hidden rounded-md bg-red-500 lg:max-w-md"
-                      onMouseEnter={!isMobile ? projectEnter : () => {}}
-                      onMouseLeave={!isMobile ? projectLeave : () => {}}
-                    >
-                      <img
-                        src={project.thumbnail}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
+            <ProjectsFirst
+              isMobile={isMobile}
+              projectEnter={projectEnter}
+              projectLeave={projectLeave}
+            />
+            {/* 
+            <ProjectsTwo
+              isMobile={isMobile}
+              projectEnter={projectEnter}
+              projectLeave={projectLeave}
+            /> */}
+          </div>
+
+          <div className=" flex w-full items-center justify-center px-4 lg:px-0">
+            <Footer
+              isMobile={isMobile}
+              footerEnter={footerEnter}
+              footerLeave={footerLeave}
+            />
           </div>
         </>
       )}
