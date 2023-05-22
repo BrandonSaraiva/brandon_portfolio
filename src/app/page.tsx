@@ -272,7 +272,7 @@ export default function Home() {
             id="top"
           >
             <Profile isInView={topRef} />
-            <div className="flex w-full items-center justify-center overflow-scroll border-b border-t border-gray-100 bg-[#f8f8f8] py-4">
+            <div className="flex w-full items-center justify-center overflow-hidden border-b border-t border-gray-100 bg-[#f8f8f8] py-4">
               <div className="slider flex w-full items-center justify-center gap-4 ">
                 {sliderItems.map((item, index) => {
                   return (
