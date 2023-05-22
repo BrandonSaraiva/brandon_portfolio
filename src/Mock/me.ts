@@ -67,7 +67,7 @@ export const Me: Me = {
       name: "Aplicativo pomodoro para celular",
       link: "https://github.com/BrandonSaraiva/APK-POMODORO",
       description:
-        "Aplicativo de Pomodoro personalizado para uso pessoal, após ficar frustrado com opções disponíveis na Play Store. A interface é propositalmente única e excêntrica. O aplicativo está disponível para download em formato .pkg para uso no celular. Transformar o código Python em um executável .pkg foi desafiador, mas após aproximadamente 9 horas de trabalho, consegui fazer isso funcionar.",
+        "Aplicativo de Pomodoro personalizado para uso pessoal que criei após ficar frustrado com opções disponíveis na Play Store. A interface é propositalmente única e simples. O aplicativo está disponível para download em formato .pkg para uso no celular. Transformar o código Python em um executável .pkg foi desafiador, mas após aproximadamente 9 horas de trabalho, consegui fazer funcionar.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "timer.jpeg",
     },
