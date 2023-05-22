@@ -202,7 +202,7 @@ export default function Home() {
     "Automação",
     "Python",
     "PYAUTOGUI",
-    "SQL"
+    "SQL",
     "Node Js",
     "Ciência de dados",
     "Inteligência Artificial",
