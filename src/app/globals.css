@@ -20,6 +20,21 @@ html {
     transform: translate3d(-20%, 0, 0);
   }
 }
+@keyframes slider-text2 {
+  0% {
+    transform: translate3d(130%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-130%, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    animation: slider-text2 6s linear infinite alternate;
+  }
+}
 
 ::selection {
   background-color: rgb(0 0 0 / 0.5);

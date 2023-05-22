@@ -5,12 +5,14 @@ interface Projects {
   isMobile: any;
   projectEnter: any;
   projectLeave: any;
+  isActive: any;
 }
 
 export default function ProjectsFirst({
   isMobile,
   projectEnter,
   projectLeave,
+  isActive,
 }: Projects) {
   return (
     <div
@@ -29,6 +31,7 @@ export default function ProjectsFirst({
           funcionais e inovadoras.
         </small>
       </div>
+      <div ref={isActive} />
       {Me.projects.map((project) => {
         return (
           <div

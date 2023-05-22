@@ -12,13 +12,14 @@ export default function Loader({
   useEffect(() => {
     setTimeout(() => {
       setIsLoading();
-    }, 5500);
+    }, 6800);
   }, [setIsLoading]);
   if (!isFirstLoading) {
     setIsLoading();
   }
   const [text, setText] = useState("show");
   const [text2, setText2] = useState("");
+  const [text3, setText3] = useState("");
 
   const animate = {
     show: {
@@ -58,6 +59,25 @@ export default function Loader({
       },
     },
   };
+  const animate3 = {
+    show: {
+      opacity: 1,
+      transition: {
+        duration: 1.4,
+        delay: 0.8,
+        ease: "easeInOut",
+      },
+    },
+    hidden: {
+      opacity: 0,
+      y: -100,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut",
+        delay: 0,
+      },
+    },
+  };
 
   function showLoading() {
     setCookie(null, "show_loading", "false", {
@@ -92,13 +112,22 @@ export default function Loader({
           </motion.span>
 
           <motion.span
-            className="absolute top-1/2 text-xl text-white md:text-4xl"
+            className="absolute top-1/2 text-xl text-white md:text-3xl"
             initial={{ opacity: 0 }}
             animate={text2}
             variants={animate2}
-            onAnimationComplete={() => (setText2("hidden"), showLoading())}
+            onAnimationComplete={() => (setText2("hidden"), setText3("show"))}
           >
-            Olá Prazer, seja Bem vindo ao meu portfolio 😄
+            Olá Prazer 👋🏻 😄
+          </motion.span>
+          <motion.span
+            className="absolute top-1/2 text-xl text-white md:text-3xl"
+            initial={{ opacity: 0 }}
+            animate={text3}
+            variants={animate3}
+            onAnimationComplete={() => (setText3("hidden"), showLoading())}
+          >
+            Seja Bem vindo ao meu portfolio 😄
           </motion.span>
         </motion.div>
       )}

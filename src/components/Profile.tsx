@@ -60,7 +60,7 @@ export default function Profile({ isInView }: any) {
   return (
     <>
       <div ref={isInView} />
-      <div className="-mt-15 flex h-[700px] w-full max-w-7xl flex-col items-center  justify-center bg-[url('/bg-hero-medium.svg')] bg-cover bg-center bg-no-repeat lg:-mt-10 lg:h-[980px]">
+      <div className="-mt-15 flex h-[700px] w-full max-w-7xl flex-col items-center justify-center  bg-[url('/bg-hero-medium.svg')] bg-cover bg-center bg-no-repeat px-4 lg:-mt-10 lg:h-[980px] lg:px-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={animate.show}

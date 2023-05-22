@@ -23,7 +23,9 @@ export default function Home() {
   const topRef = useRef(null);
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
   const isOnTop = useInView(topRef);
+  const isOnContact = useInView(contactRef);
   const isOnAbout = useInView(aboutRef);
   const isOnProject = useInView(projectRef);
   const [showLoading, setShowLoading] = useState<null | boolean>(true);
@@ -248,6 +250,7 @@ export default function Home() {
             isOnTop={isOnTop}
             isOnAbout={isOnAbout}
             isOnProject={isOnProject}
+            isOnContact={isOnContact}
           />
           {!isMobile && (
             <motion.div
@@ -295,11 +298,9 @@ export default function Home() {
               <About isInView={aboutRef} />
             </div>
 
-            <div
-              ref={projectRef}
-              className="flex w-full items-center justify-center"
-            >
+            <div className="flex w-full items-center justify-center">
               <ProjectsFirst
+                isActive={projectRef}
                 isMobile={isMobile}
                 projectEnter={projectEnter}
                 projectLeave={projectLeave}
@@ -313,7 +314,11 @@ export default function Home() {
             /> */}
           </div>
 
-          <div className=" flex w-full items-center justify-center px-4 lg:px-0">
+          <div
+            ref={contactRef}
+            id="contact"
+            className="flex w-full items-center justify-center px-4 lg:px-0"
+          >
             <Footer
               isMobile={isMobile}
               footerEnter={footerEnter}
