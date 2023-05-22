@@ -59,7 +59,7 @@ export const Me: Me = {
       link: "https://github.com/BrandonSaraiva/Projeto-Ciencia-de-Dados-IESB",
       tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
       description:
-        "Desenvolvi um projeto de análise descritiva dos dados das Eleições Gerais Ordinárias no Brasil em 2022, focado no Distrito Federal. Utilizei PostgreSQL como banco de dados e Python/SAS para a análise. Destaquei padrões, tendências e insights relevantes nos resultados eleitorais.",
+        "Desenvolvi um projeto de análise descritiva dos dados das Eleições Gerais Ordinárias no Brasil em 2022, focado no Distrito Federal. Utilizamos PostgreSQL como banco de dados e Python/SAS para a análise. identificamos padrões, tendências e insights relevantes nos resultados eleitorais.",
       thumbnail:
         "https://brandonsaraiva.github.io/devportfolio/images/thumbs/facul.jpg",
     },
@@ -75,7 +75,7 @@ export const Me: Me = {
       name: "Projeto internacoes e obitos - IESB",
       link: "https://github.com/BrandonSaraiva/pi3-internacoes",
       description:
-        "Aplicação que investiga a relação entre internações, duração da estadia hospitalar e mortalidade. utilizando dados públicos do Ministério da Saúde para analisar o número de internações, mortes e a duração média da hospitalização por procedimento em cada município brasileiro.",
+        "Aplicação que investiga a relação entre internações, duração da estadia hospitalar e mortalidade. Utilizando dados públicos do Ministério da Saúde para analisar o número de internações, mortes e a duração média da hospitalização por procedimento em cada município brasileiro.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "/hospital.jpeg",
     },
