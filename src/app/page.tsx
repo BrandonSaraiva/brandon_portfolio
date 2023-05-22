@@ -200,8 +200,9 @@ export default function Home() {
   }, []);
   const sliderItems = [
     "Automação",
-    "Sistemas",
     "Python",
+    "PYAUTOGUI",
+    "SQL"
     "Node Js",
     "Ciência de dados",
     "Inteligência Artificial",
