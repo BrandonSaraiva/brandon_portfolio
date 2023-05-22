@@ -200,7 +200,7 @@ export default function Home() {
   }, []);
   const sliderItems = [
     "Automação",
-    "Node Js", 
+    "Node Js",
     "Web",
     "Ciência de dados",
     "Inteligência Artificial",
@@ -214,7 +214,7 @@ export default function Home() {
     "Power BI",
     "Matplotlib",
     "PYAUTOGUI",
-    "SQL"
+    "SQL",
   ];
   return (
     <div
@@ -237,7 +237,7 @@ export default function Home() {
               url: "/cover.jpeg",
               width: 800,
               height: 600,
-              alt: "Portfolio pessoal Brandon Cardoso",
+              alt: "Portfolio pessoal",
             },
           ],
         }}
