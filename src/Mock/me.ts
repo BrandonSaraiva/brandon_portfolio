@@ -43,7 +43,7 @@ export const Me: Me = {
         "App em Python para automatizar tarefas diárias. Com comandos simples, posso receber boletos, enviar arquivos para o Google Drive e acessar informações úteis, como previsão do tempo e últimos e-mails. Além disso, implementei funcionalidades para controlar remotamente o PC e reprodução de vídeos no YouTube.",
       tags: ["Google colab", "Telegram", "Bot", "Web Scraping"],
       thumbnail:
-        "https://brandonsaraiva.github.io/devportfolio/images/thumbs/cleiton.jpg",
+        "https://wallpapers.com/images/high/antivirus-gtca5r11sslm65nl.webp",
     },
     {
       name: "Site cartoes presente",
