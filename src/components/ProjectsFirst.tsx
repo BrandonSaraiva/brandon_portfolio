@@ -26,7 +26,7 @@ export default function ProjectsFirst({
         </span>
         <small className="mt-4 max-w-md font-sans text-base text-gray-400">
           Projetos recentes, nos quais apliquei minhas habilidades como
-          desenvolvedor, Cada projeto representa uma oportunidade de aprendizado
+          cientista de dados. Cada projeto representou uma oportunidade de aprendizado
           e aplicação prática de conceitos-chave, resultando em soluções
           funcionais e inovadoras.
         </small>
