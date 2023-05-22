@@ -13,7 +13,7 @@ import Header from "@/components/Header";
 import { Me } from "@/Mock/me";
 import { About } from "@/components/About";
 import ProjectsFirst from "@/components/ProjectsFirst";
-import ProjectsTwo from "@/components/ProjectsTwo";
+
 import Footer from "@/components/Footer";
 import { NextSeo } from "next-seo";
 
@@ -283,12 +283,6 @@ export default function Home() {
                 projectLeave={projectLeave}
               />
             </div>
-            {/* 
-            <ProjectsTwo
-              isMobile={isMobile}
-              projectEnter={projectEnter}
-              projectLeave={projectLeave}
-            /> */}
           </div>
 
           <div

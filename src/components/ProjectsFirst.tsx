@@ -31,10 +31,11 @@ export default function ProjectsFirst({
           soluções funcionais e inovadoras.
         </small>
       </div>
-      <div ref={isActive} />
+
       {Me.projects.map((project) => {
         return (
           <div
+            ref={isActive}
             key={project.name}
             className="flex w-full flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-0 "
           >
@@ -49,7 +50,7 @@ export default function ProjectsFirst({
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 text-sm "
+                className="mt-5 cursor-none text-sm "
               >
                 ver github
               </a>

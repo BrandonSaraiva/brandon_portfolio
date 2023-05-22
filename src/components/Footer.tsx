@@ -96,23 +96,23 @@ export default function Footer({
               href={Me.linkedin}
               target="_blank"
               rel="noreferer"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
               Linkedin <ArrowUp />
             </a>
             <a
               href={Me.gitHub}
-              target="_bl"
+              target="_blank"
               rel="nore"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
               Github <ArrowUp />
             </a>
             <a
               href={Me.youtube}
-              target="_bl"
+              target="_blank"
               rel="nore"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
               Youtube <ArrowUp />
             </a>
@@ -123,7 +123,7 @@ export default function Footer({
               href={Me.linkedin}
               target="_blank"
               rel="noreferer"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
               <svg
                 width="18"
@@ -144,7 +144,7 @@ export default function Footer({
               href={Me.gitHub}
               target="_bl"
               rel="nore"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
             >
               <svg
                 width="20"
@@ -165,7 +165,7 @@ export default function Footer({
               href={Me.youtube}
               target="_bl"
               rel="nore"
-              className="md:text-md  flex items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
+              className="md:text-md flex cursor-none items-center justify-center gap-2 text-sm text-black/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
             >
               <svg
                 width="24"
@@ -191,19 +191,19 @@ export default function Footer({
           <div className="flex w-fit max-w-lg justify-end lg:w-full lg:justify-around">
             <a
               href="#top"
-              className="md:text-md  flex gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
+              className="md:text-md flex cursor-none gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
               Inicio
             </a>
             <a
               href="#about"
-              className="md:text-md  hidden  gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
+              className="md:text-md hidden cursor-none  gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
             >
               Sobre
             </a>
             <a
               href="#projects"
-              className="md:text-md  hidden gap-2  text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
+              className="md:text-md hidden cursor-none gap-2  text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
             >
               Projetos
             </a>
