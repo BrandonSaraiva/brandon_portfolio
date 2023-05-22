@@ -201,7 +201,6 @@ export default function Home() {
   const sliderItems = [
     "Automação",
     "Python",
-    "PYAUTOGUI",
     "SQL",
     "Node Js",
     "Ciência de dados",
@@ -216,7 +215,6 @@ export default function Home() {
     "Power BI",
     "Pandas",
     "Matplotlib",
-    "NumPy",
     "PYAUTOGUI",
     "SQL"
   ];
