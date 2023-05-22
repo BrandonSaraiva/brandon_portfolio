@@ -231,7 +231,7 @@ export default function Home() {
         openGraph={{
           type: "website",
           locale: "pt_BR",
-          url: "https://brandoncardoso.vercel.app/",
+          url: "https://brandon-portfolio-theta.vercel.app/",
           site_name: "Brandon Cardoso",
           title: "Brandon Cardoso",
           images: [
