@@ -15,7 +15,7 @@ export default function ProjectsFirst({
   return (
     <div
       id="projects"
-      className="z-10 -mt-96 flex w-full max-w-7xl flex-col gap-20 px-6"
+      className="z-10 mt-48  flex w-full max-w-7xl flex-col gap-20  px-6"
     >
       <div className="flex flex-col">
         <span className="font-light uppercase">Trabalhos</span>

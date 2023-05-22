@@ -87,7 +87,8 @@ export default function Loader({
             variants={animate}
             onAnimationComplete={() => (setText("hidden"), setText2("show"))}
           >
-            Olá Prazer 👋🏻
+            {/* Olá Prazer 👋🏻 */}
+            Brandon Cardoso
           </motion.span>
 
           <motion.span
@@ -97,7 +98,7 @@ export default function Loader({
             variants={animate2}
             onAnimationComplete={() => (setText2("hidden"), showLoading())}
           >
-            Seja Bem vindo ao meu portfolio 😄
+            Olá Prazer, seja Bem vindo ao meu portfolio 😄
           </motion.span>
         </motion.div>
       )}

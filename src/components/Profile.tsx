@@ -2,7 +2,8 @@ import { Me } from "@/Mock/me";
 import React, { useRef, useState, useLayoutEffect, useEffect } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ArrowDown from "./icons/arrowDown";
-export default function Profile() {
+
+export default function Profile({ isInView }: any) {
   const [offset, setOffset] = useState(0);
   const animate = {
     show: {
@@ -57,25 +58,28 @@ export default function Profile() {
   }, [ref]);
 
   return (
-    <div className="-mt-15 flex h-[700px] w-full max-w-7xl flex-col items-center  justify-center bg-[url('/bg-hero-medium.svg')] bg-cover bg-center bg-no-repeat lg:-mt-10 lg:h-[980px]">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={animate.show}
-        variants={animate}
-        ref={ref}
-        style={{ y: y }}
-        className="flex flex-col items-center justify-center text-center"
-      >
-        <motion.h1 className="font-sans text-4xl font-semibold">
-          Hi there <span className="text-xl">👋🏻 I&apos;m</span>
-        </motion.h1>
-        <span className="text-3xl font-semibold">{Me.name}</span>
-        <span className="mt-4 text-xl">{Me.role}</span>
-      </motion.div>
+    <>
+      <div ref={isInView} />
+      <div className="-mt-15 flex h-[700px] w-full max-w-7xl flex-col items-center  justify-center bg-[url('/bg-hero-medium.svg')] bg-cover bg-center bg-no-repeat lg:-mt-10 lg:h-[980px]">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={animate.show}
+          variants={animate}
+          ref={ref}
+          style={{ y: y }}
+          className="flex flex-col items-center justify-center text-center"
+        >
+          <motion.h1 className="font-sans text-4xl font-semibold">
+            Hi there <span className="text-xl">👋🏻 I&apos;m</span>
+          </motion.h1>
+          <span className="text-3xl font-semibold">{Me.name}</span>
+          <span className="mt-4 text-xl">{Me.role}</span>
+        </motion.div>
 
-      {/* <span className="-rotate-90 mt-20 text-lg font-light flex flex-row-reverse items-center justify-center gap-4 w-fit">
+        {/* <span className="-rotate-90 mt-20 text-lg font-light flex flex-row-reverse items-center justify-center gap-4 w-fit">
 				scroll <ArrowDown />
 			</span> */}
-    </div>
+      </div>
+    </>
   );
 }

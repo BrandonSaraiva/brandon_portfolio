@@ -6,7 +6,7 @@ import Loader from "@/components/Loader";
 import useMouse from "@react-hook/mouse-position";
 import { useEffect, useRef, useState } from "react";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { parseCookies, setCookie } from "nookies";
 import Profile from "@/components/Profile";
 import Header from "@/components/Header";
@@ -15,10 +15,17 @@ import { About } from "@/components/About";
 import ProjectsFirst from "@/components/ProjectsFirst";
 import ProjectsTwo from "@/components/ProjectsTwo";
 import Footer from "@/components/Footer";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const { show_loading } = parseCookies();
+  const topRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const isOnTop = useInView(topRef);
+  const isOnAbout = useInView(aboutRef);
+  const isOnProject = useInView(projectRef);
   const [showLoading, setShowLoading] = useState<null | boolean>(true);
   const [showContent, setShowContent] = useState(false);
   const [cursorText, setCursorText] = useState("");
@@ -189,7 +196,26 @@ export default function Home() {
       setCursorVariant("default");
     }
   }, []);
-
+  const sliderItems = [
+    "Automação",
+    "Sistemas",
+    "Web",
+    "Python",
+    "Node Js",
+    "Ciencia de dados",
+    "inteligência artificial",
+    "Machine Learning",
+    "React Js",
+    "Automação",
+    "Sistemas",
+    "Web",
+    "Python",
+    "Node Js",
+    "Ciencia de dados",
+    "inteligência artificial",
+    "Machine Learning",
+    "React Js",
+  ];
   return (
     <div
       ref={ref}
@@ -197,9 +223,32 @@ export default function Home() {
       onMouseLeave={!isMobile ? pageLeave : () => {}}
       className="h-screen w-full"
     >
+      <NextSeo
+        title="Brandon Cardoso"
+        description="Portfolio pessoal Brandon Cardoso"
+        openGraph={{
+          type: "website",
+          locale: "pt_BR",
+          url: "https://brandoncardoso.vercel.app/",
+          site_name: "Brandon Cardoso",
+          title: "Brandon Cardoso",
+          images: [
+            {
+              url: "/cover.jpeg",
+              width: 800,
+              height: 600,
+              alt: "Portfolio pessoal Brandon Cardoso",
+            },
+          ],
+        }}
+      />
       {showContent && (
         <>
-          {/* <Header /> */}
+          <Header
+            isOnTop={isOnTop}
+            isOnAbout={isOnAbout}
+            isOnProject={isOnProject}
+          />
           {!isMobile && (
             <motion.div
               variants={variants}
@@ -219,13 +268,43 @@ export default function Home() {
             className="mt-5 flex w-full flex-col items-center pb-52"
             id="top"
           >
-            <Profile />
-            <About />
-            <ProjectsFirst
-              isMobile={isMobile}
-              projectEnter={projectEnter}
-              projectLeave={projectLeave}
-            />
+            <Profile isInView={topRef} />
+            <div className="flex w-full items-center justify-center overflow-scroll border-b border-t border-gray-100 bg-[#f8f8f8] py-4">
+              <div className="slider flex w-full items-center justify-center gap-4 ">
+                {sliderItems.map((item, index) => {
+                  return (
+                    <div key={index} className="flex gap-10">
+                      <span className="flex whitespace-nowrap text-gray-800 transition-colors duration-200 hover:text-gray-300">
+                        {item}
+                      </span>
+                      {sliderItems.length - 1 == index ? (
+                        ""
+                      ) : (
+                        <img
+                          src="/icon-lightning.svg"
+                          alt=""
+                          className="mr-5"
+                        />
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="mt-10 flex w-full items-center justify-center bg-gradient-to-b from-transparent via-[#ededed] to-transparent">
+              <About isInView={aboutRef} />
+            </div>
+
+            <div
+              ref={projectRef}
+              className="flex w-full items-center justify-center"
+            >
+              <ProjectsFirst
+                isMobile={isMobile}
+                projectEnter={projectEnter}
+                projectLeave={projectLeave}
+              />
+            </div>
             {/* 
             <ProjectsTwo
               isMobile={isMobile}

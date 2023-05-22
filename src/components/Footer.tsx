@@ -37,10 +37,10 @@ export default function Footer({
           onMouseEnter={!isMobile ? footerEnter : () => {}}
           onMouseLeave={!isMobile ? footerLeave : () => {}}
           onSubmit={handleSubmit(handleSubmitMessage)}
-          className="flex w-full max-w-5xl flex-col items-center justify-center rounded-2xl bg-gray-900 px-5 py-8 text-white lg:px-16"
+          className="flex w-full max-w-5xl flex-col items-center justify-center rounded-2xl bg-gray-900 px-5 py-8 text-white lg:px-8"
         >
-          <p className="text-md font-jetbrains uppercase">contato</p>
-          <span className="mb-5 mt-5 max-w-md text-center font-alt text-2xl font-semibold lg:text-4xl">
+          <p className="text-md font-jetbrains uppercase">Enviar mensagem</p>
+          <span className="mb-5 mt-5 max-w-md text-center text-2xl font-semibold lg:text-4xl">
             Gostaria de entrar em contato ?
           </span>
           <textarea
@@ -84,54 +84,7 @@ export default function Footer({
       >
         <Connector />
       </div>
-      {/* <div
-        onMouseEnter={!isMobile ? footerEnter : () => {}}
-        onMouseLeave={!isMobile ? footerLeave : () => {}}
-        className="flex w-full flex-col items-center rounded-2xl bg-gray-900 px-5 pb-5 pt-14 lg:px-20 lg:pb-10"
-      >
-        <div className="flex w-full items-center justify-between">
-          <a
-            href={Me.linkedin}
-            target="_blank"
-            rel="noreferer"
-            className="md:text-md  flex items-center justify-center gap-2 text-sm text-white/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
-          >
-            Linkedin <ArrowUp />
-          </a>
-          <a
-            href={Me.gitHub}
-            target="_bl"
-            rel="nore"
-            className="md:text-md  flex items-center justify-center gap-2 text-sm text-white/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
-          >
-            Github <ArrowUp />
-          </a>
-          <h1 className="-ml-[56px] hidden max-w-[100px] text-center text-lg font-semibold leading-5 text-white lg:flex">
-            {Me.name}
-          </h1>
 
-          <a
-            href={Me.youtube}
-            target="_bl"
-            rel="nore"
-            className="md:text-md  flex items-center justify-center gap-2 text-sm text-white/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
-          >
-            Youtube <ArrowUp />
-          </a>
-          <a
-            href="#"
-            target="_bl"
-            rel="nore"
-            className="md:text-md  flex items-center justify-center gap-2 text-sm text-white/80 transition-colors duration-200 hover:cursor-pointer hover:text-white"
-          >
-            subir
-          </a>
-        </div>
-        <div className="my-2 h-[1px] w-full bg-white/10 lg:my-6" />
-        <div className="mt-2 flex w-full items-end justify-center text-sm text-white lg:mt-6">
-          <span>&copy; Made by {Me.name} 2023</span>
-        </div>
-      </div> */}
       <div
         onMouseEnter={!isMobile ? footerEnter : () => {}}
         onMouseLeave={!isMobile ? footerLeave : () => {}}

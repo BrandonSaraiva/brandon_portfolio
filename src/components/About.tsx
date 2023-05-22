@@ -4,7 +4,7 @@ import { stylesWithCssVar } from "@/utils/motion";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
-export const About = () => {
+export const About = ({ isInView }: any) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -13,7 +13,7 @@ export const About = () => {
 
   const text1Opacity = useTransform(
     scrollYProgress,
-    [0.1, 0.4, 0.5],
+    [0.1, 0.3, 0.5],
     [0, 1, 0]
   );
   const text1Y = useTransform(
@@ -35,8 +35,8 @@ export const About = () => {
 
   const text3Opacity = useTransform(
     scrollYProgress,
-    [0.7, 0.8, 0.9],
-    [0, 1, 0]
+    [0.7, 0.8, 0.9, 1],
+    [0, 1, 1, 0.5]
   );
   const text3Y = useTransform(
     scrollYProgress,
@@ -48,9 +48,12 @@ export const About = () => {
     <section
       ref={targetRef}
       id="about"
-      className="flex h-[350vh] w-full max-w-7xl flex-col items-center justify-start"
+      className="flex h-[280vh] w-full max-w-7xl flex-col items-center justify-start"
     >
-      <div className="sticky top-[16.7vh] flex h-[66.8vh] w-full flex-col justify-center px-16">
+      <div
+        ref={isInView}
+        className="sticky top-[16.7vh] flex h-[66.8vh] w-full flex-col justify-center px-16"
+      >
         <motion.p
           style={stylesWithCssVar({
             opacity: text1Opacity,

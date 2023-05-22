@@ -1,7 +1,5 @@
-import Header from "@/components/Header";
 import "./globals.css";
 import { Inter, Roboto, JetBrains_Mono } from "next/font/google";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetBrains = JetBrains_Mono({
