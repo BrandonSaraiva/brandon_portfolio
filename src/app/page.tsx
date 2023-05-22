@@ -200,20 +200,18 @@ export default function Home() {
   }, []);
   const sliderItems = [
     "Automação",
-    "Python",
-    "SQL",
-    "Node Js",
+    "Node Js", 
+    "Web",
     "Ciência de dados",
     "Inteligência Artificial",
     "Machine Learning",
-    "Web",
     "Python",
     "Web Scraping",
     "Linguagem C",
     "Java",
     "SAS",
-    "Power BI",
     "Pandas",
+    "Power BI",
     "Matplotlib",
     "PYAUTOGUI",
     "SQL"
