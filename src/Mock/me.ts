@@ -85,7 +85,7 @@ export const Me: Me = {
       description:
         "Automatizacão de processos de análise de dados. Utilizei diversas bibliotecas, como pyautogui, selenium e pandas. O bot gera slides com base em informações fornecidas e cria gráficos a partir de um banco de dados baixado. O projeto inclui interações sonoras e acesso a recursos que exigem login. Um destaque é a utilização do Google Colab para manipulação dos dados.",
       tags: ["Python", "Kivy", "Plyer"],
-      thumbnail: "/web.jpeg",
+      thumbnail: "/web.jpg",
     },
   ],
 };
