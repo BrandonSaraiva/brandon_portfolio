@@ -59,9 +59,9 @@ export const About = ({ isInView }: any) => {
             opacity: text1Opacity,
             "--y": text1Y,
           })}
-          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-black lg:w-fit lg:px-0"
+          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0"
         >
-          <span className="text-4xl font-semibold text-black">
+          <span className="text-4xl font-semibold text-white">
             Olá visitante prazer <span className="text-xl"> 👋🏻 😄</span>
           </span>
           <br />
@@ -76,9 +76,9 @@ export const About = ({ isInView }: any) => {
             opacity: text2Opacity,
             "--y": text2Y,
           })}
-          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-black lg:w-fit lg:px-0"
+          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0"
         >
-          <span className="text-4xl font-semibold text-black">
+          <span className="text-4xl font-semibold text-white">
             Sobre mim 👨🏻‍💻
           </span>
           <br />
@@ -95,9 +95,9 @@ export const About = ({ isInView }: any) => {
             opacity: text3Opacity,
             "--y": text3Y,
           })}
-          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-black lg:w-fit lg:px-0"
+          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0"
         >
-          <span className="text-4xl font-semibold text-black">Atualmente</span>
+          <span className="text-4xl font-semibold text-white">Atualmente</span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
             No atual momento estou estudando bastante sobre Bot's , Web Scraping

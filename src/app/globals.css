@@ -4,7 +4,8 @@
 
 html {
   scroll-behavior: smooth;
-  @apply bg-white text-gray-900;
+  @apply bg-black text-white;
+  @apply cursor-none !important;
 }
 
 .slider {

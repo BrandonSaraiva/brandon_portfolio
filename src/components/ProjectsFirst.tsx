@@ -24,17 +24,18 @@ export default function ProjectsFirst({
         <span className="mt-2 font-sans text-4xl font-semibold">
           Ultimos projetos
         </span>
-        <small className="mt-4 max-w-md font-sans text-base text-gray-400">
+        <small className="mt-4 max-w-md font-sans text-base text-white/90">
           Projetos recentes, nos quais apliquei minhas habilidades como
-          cientista de dados. Cada projeto representou uma oportunidade de aprendizado
-          e aplicação prática de conceitos-chave, resultando em soluções
-          funcionais e inovadoras.
+          cientista de dados. Cada projeto representou uma oportunidade de
+          aprendizado e aplicação prática de conceitos-chave, resultando em
+          soluções funcionais e inovadoras.
         </small>
       </div>
-      <div ref={isActive} />
+
       {Me.projects.map((project) => {
         return (
           <div
+            ref={isActive}
             key={project.name}
             className="flex w-full flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-0 "
           >
@@ -42,14 +43,14 @@ export default function ProjectsFirst({
               <p className="text-xl font-semibold lg:text-2xl">
                 {project.name}
               </p>
-              <span className="lg:text-md mt-2 leading-6 text-gray-400 lg:max-w-md">
+              <span className="lg:text-md mt-2 leading-6 text-white/80 lg:max-w-md">
                 {project.description}
               </span>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 text-sm "
+                className="mt-5 cursor-none text-sm "
               >
                 ver github
               </a>
@@ -58,7 +59,7 @@ export default function ProjectsFirst({
               href={project.link}
               target="_blank"
               rel="noreferrer"
-              className="h-[245px] w-full overflow-hidden rounded-md bg-red-500 lg:max-w-md"
+              className="h-[245px] w-full  cursor-none overflow-hidden rounded-md bg-red-500 lg:max-w-md"
               onMouseEnter={!isMobile ? projectEnter : () => {}}
               onMouseLeave={!isMobile ? projectLeave : () => {}}
             >

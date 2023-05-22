@@ -8,7 +8,7 @@ export function HomeIcon() {
       viewBox="0 0 24 24"
     >
       <path
-        stroke="#475569"
+        stroke="white"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"

@@ -13,7 +13,7 @@ import Header from "@/components/Header";
 import { Me } from "@/Mock/me";
 import { About } from "@/components/About";
 import ProjectsFirst from "@/components/ProjectsFirst";
-import ProjectsTwo from "@/components/ProjectsTwo";
+
 import Footer from "@/components/Footer";
 import { NextSeo } from "next-seo";
 
@@ -34,10 +34,7 @@ export default function Home() {
   const [cursorVariant, setCursorVariant] = useState("hidden");
   const [isMobile, setIsMobile] = useState<Boolean | null>(false);
   const ref = useRef(null);
-  const mouse = useMouse(ref, {
-    enterDelay: 100,
-    leaveDelay: 100,
-  });
+  const mouse = useMouse(ref);
   const [mx, setMx] = useState(0);
   const [my, setMy] = useState(0);
 
@@ -59,65 +56,55 @@ export default function Home() {
       x: mx,
       y: my,
       fontSize: "16px",
-      backgroundColor: "#000",
       transition: {
-        type: "spring",
-        mass: 0.6,
+        duration: 0.1,
       },
     },
     default: {
       opacity: 1,
-      height: 10,
-      width: 10,
+      height: 25,
+      width: 25,
       fontSize: "16px",
-      backgroundColor: "#000",
-      x: mx,
-      y: my,
+      backgroundColor: "#ffffff",
+      x: mx - 10,
+      y: my - 5,
       transition: {
-        type: "spring",
-        mass: 0.6,
+        duration: 0.1,
       },
     },
     footer: {
       opacity: 1,
-      height: 10,
-      width: 10,
+      height: 25,
+      width: 25,
       fontSize: "16px",
-      backgroundColor: "#fff",
+      backgroundColor: "#000000",
       x: mx,
       y: my,
       transition: {
-        type: "spring",
-        mass: 0.6,
+        duration: 0.1,
       },
     },
     project: {
       opacity: 1,
-      // backgroundColor: "rgba(255, 255, 255, 0.6)",
-      backgroundColor: "#000000c0",
-      color: "#FFF",
+      backgroundColor: "#fafafa63",
+      //backgroundColor: "#000000c0",
+      color: "#000000",
+      fontWeight: 600,
       height: 80,
       width: 80,
       fontSize: "12px",
-      x: mx - 32,
-      y: my - 32,
-    },
-    contact: {
-      opacity: 1,
-      backgroundColor: "black",
-      color: "#000",
-      height: 64,
-      width: 64,
-      fontSize: "32px",
-      x: mx - 48,
-      y: my - 48,
+      x: mx,
+      y: my,
+      transition: {
+        duration: 0.1,
+      },
     },
   };
 
   const spring = {
     type: "spring",
-    stiffness: 500,
-    damping: 28,
+    stiffness: 0,
+    damping: 0,
   };
 
   function pageEnter(event: any) {
@@ -132,7 +119,7 @@ export default function Home() {
 
   function footerEnter(event: any) {
     setCursorText("");
-    setCursorVariant("hidden");
+    setCursorVariant("footer");
   }
 
   function footerLeave(event: any) {
@@ -146,16 +133,6 @@ export default function Home() {
   }
 
   function projectLeave(event: any) {
-    setCursorText("");
-    setCursorVariant("default");
-  }
-
-  function submitButtonEnter(event: any) {
-    setCursorText("✉️");
-    setCursorVariant("contact");
-  }
-
-  function submitButtonLeave(event: any) {
     setCursorText("");
     setCursorVariant("default");
   }
@@ -258,7 +235,7 @@ export default function Home() {
               transition={spring}
             >
               <span
-                className="pointer-events-none m-auto flex-auto text-inherit"
+                className="pointer-events-none m-auto flex-auto text-black text-inherit"
                 dangerouslySetInnerHTML={{
                   __html: cursorText,
                 }}
@@ -270,12 +247,12 @@ export default function Home() {
             id="top"
           >
             <Profile isInView={topRef} />
-            <div className="flex w-full items-center justify-center overflow-hidden border-b border-t border-gray-100 bg-[#f8f8f8] py-4">
+            <div className="flex w-full items-center justify-center overflow-hidden border-b border-t border-gray-600 bg-[#000000] py-4">
               <div className="slider flex w-full items-center justify-center gap-4 ">
                 {sliderItems.map((item, index) => {
                   return (
                     <div key={index} className="flex gap-10">
-                      <span className="flex whitespace-nowrap text-gray-800 transition-colors duration-200 hover:text-gray-300">
+                      <span className="flex whitespace-nowrap text-white transition-colors duration-200 hover:text-gray-300">
                         {item}
                       </span>
                       {sliderItems.length - 1 == index ? (
@@ -292,7 +269,7 @@ export default function Home() {
                 })}
               </div>
             </div>
-            <div className="mt-10 flex w-full items-center justify-center bg-gradient-to-b from-transparent via-[#ededed] to-transparent">
+            <div className="mt-10 flex w-full items-center justify-center bg-black">
               <About isInView={aboutRef} />
             </div>
 
@@ -304,12 +281,6 @@ export default function Home() {
                 projectLeave={projectLeave}
               />
             </div>
-            {/* 
-            <ProjectsTwo
-              isMobile={isMobile}
-              projectEnter={projectEnter}
-              projectLeave={projectLeave}
-            /> */}
           </div>
 
           <div
