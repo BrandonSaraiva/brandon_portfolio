@@ -87,5 +87,13 @@ export const Me: Me = {
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "/web.jpg",
     },
+   {
+      name: "Envio automatizado de mensagens",
+      link: "https://github.com/BrandonSaraiva/data_science_bot",
+      description:
+        "Este projeto consiste em um bot para automatizar o envio de mensagens em um determinado horário do dia, além de coletar diariamente as moedas da plataforma Shopee. O objetivo é fornecer uma solução simples para essas tarefas específicas.",
+      tags: ["Python", "Kivy", "Plyer"],
+      thumbnail: "https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.webp",
+    }
   ],
 };
