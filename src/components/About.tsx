@@ -83,11 +83,8 @@ export const About = ({ isInView }: any) => {
           </span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            Descobri na área de Ciência de Dados uma forma de unir minha paixão
-            por tecnologia e minha curiosidade em entender o mundo, atualmente o
-            profissional de Dados se faz cada vez mais importante, por isso me
-            sinto honrado em poder contribuir de alguma forma para o
-            desenvolvimento da sociedade através dessa área.
+            Descobri na área de Ciência de Dados uma forma de unir minha paixão por tecnologia e minha curiosidade em entender o mundo. 
+            Hoje na era da (des)informação o profissional de Dados se faz cada vez mais importante seja para empresas, governos ou até mesmo para o cidadão comum, por isso me sinto honrado em poder contribuir de alguma forma para o desenvolvimento da sociedade através dessa área. 
           </span>
         </motion.p>
         <motion.p
