@@ -55,7 +55,7 @@ export const Me: Me = {
     },
 
     {
-      name: "Projeto eleicoes geais - IESB",
+      name: "Projeto eleicoes gerais - IESB",
       link: "https://github.com/BrandonSaraiva/Projeto-Ciencia-de-Dados-IESB",
       tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
       description:
