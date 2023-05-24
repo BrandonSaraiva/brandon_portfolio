@@ -91,7 +91,7 @@ export const Me: Me = {
       name: "Envio automatizado de mensagens",
       link: "https://github.com/BrandonSaraiva/automated_messages",
       description:
-        "Este projeto consiste em automatizar o envio de mensagens em um determinado horário do dia, além de coletar diariamente as moedas da plataforma Shopee. O objetivo é fornecer uma solução simples para essas tarefas específicas.",
+        "Este projeto teve como objetivo automatizar o envio de mensagens em horários programados e permitir o agendamento para qualquer dia desejado. Além disso, ele também realiza a coleta diária das moedas na plataforma Shopee. A proposta é oferecer uma solução simples e eficiente para essas tarefas específicas. Com esse bot, é possível automatizar o processo de envio de mensagens e garantir que as moedas sejam coletadas diariamente, sem a necessidade de intervenção manual.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.webp",
     }
