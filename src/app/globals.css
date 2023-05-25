@@ -1,43 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  @apply bg-black text-white;
-  @apply cursor-none !important;
-}
+    html {
+      scroll-behavior: smooth;
+      @apply bg-black text-white;
+      @apply cursor-none !important;
+      background: linear-gradient(to bottom, black, purple);
+      transition: background 0.5s;
+    }
 
-.slider {
-  animation: slider-text 20s linear infinite alternate;
-}
+    .slider {
+      animation: slider-text 20s linear infinite alternate;
+    }
 
-@keyframes slider-text {
-  0% {
-    transform: translate3d(20%, 0, 0);
-  }
+    @keyframes slider-text {
+      0% {
+        transform: translate3d(20%, 0, 0);
+      }
 
-  100% {
-    transform: translate3d(-20%, 0, 0);
-  }
-}
-@keyframes slider-text2 {
-  0% {
-    transform: translate3d(130%, 0, 0);
-  }
+      100% {
+        transform: translate3d(-20%, 0, 0);
+      }
+    }
 
-  100% {
-    transform: translate3d(-130%, 0, 0);
-  }
-}
+    @keyframes slider-text2 {
+      0% {
+        transform: translate3d(130%, 0, 0);
+      }
 
-@media (max-width: 768px) {
-  .slider {
-    animation: slider-text2 10s linear infinite alternate;
-  }
-}
+      100% {
+        transform: translate3d(-130%, 0, 0);
+      }
+    }
 
-::selection {
-  background-color: rgb(0 0 0 / 0.5);
-  color: #fff;
-}
+    @media (max-width: 768px) {
+      .slider {
+        animation: slider-text2 10s linear infinite alternate;
+      }
+    }
+
+    ::selection {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
