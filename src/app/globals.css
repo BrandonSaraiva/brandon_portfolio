@@ -4,7 +4,7 @@
 
     html {
       scroll-behavior: smooth;
-      @apply bg-gradient-to-t from-black via-gray-800 to purple-900 text-white;
+      @apply bg-gradient-to-t from-black via-gray-800 to-purple-900 text-white;
       @apply cursor-none !important;
       transition: background 0.5s;
     }
