@@ -6,7 +6,7 @@
       scroll-behavior: smooth;
       @apply bg-black text-white;
       @apply cursor-none !important;
-      background: linear-gradient(to top, black, #6c0087);
+      background: linear-gradient(to bottom, black, #6c0087);
       transition: background 0.5s;
     }
 
