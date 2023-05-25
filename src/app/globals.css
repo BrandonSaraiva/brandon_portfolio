@@ -33,7 +33,7 @@ html {
 
 @media (max-width: 768px) {
   .slider {
-    animation: slider-text2 6s linear infinite alternate;
+    animation: slider-text2 10s linear infinite alternate;
   }
 }
 
