@@ -52,14 +52,14 @@ export const About = ({ isInView }: any) => {
     >
       <div
         ref={isInView}
-        className="sticky top-[16.7vh] flex h-[66.8vh] w-full flex-col justify-center px-16"
+        className="sticky top-[16.7vh] flex h-[66.8vh] w-full flex-col justify-center px-16 bg-transparent"
       >
         <motion.p
           style={stylesWithCssVar({
             opacity: text1Opacity,
             "--y": text1Y,
           })}
-          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0"
+          className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0 bg-transparent"
         >
           <span className="text-4xl font-semibold text-white">
             Olá visitante prazer <span className="text-xl"> 👋🏻 😄</span>
