@@ -48,7 +48,7 @@ export const About = ({ isInView }: any) => {
     <section
       ref={targetRef}
       id="about"
-      className="flex h-[280vh] w-full max-w-7xl flex-col items-center justify-start"
+      className="flex h-[280vh] w-full max-w-7xl flex-col items-center justify-start bg-transparent"
     >
       <div
         ref={isInView}
