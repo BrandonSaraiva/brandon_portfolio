@@ -269,7 +269,7 @@ export default function Home() {
                 })}
               </div>
             </div>
-            <div className="mt-10 flex w-full items-center justify-center bg-black">
+            <div className="flex w-full items-center justify-center bg-gradient-to-b from-black to-transparent">
               <About isInView={aboutRef} />
             </div>
 
