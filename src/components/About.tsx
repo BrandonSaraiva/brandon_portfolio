@@ -66,7 +66,7 @@ export const About = ({ isInView }: any) => {
           </span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            Me chamo {Me.name}, atualmente estou no terceiro semestre da
+            Me chamo {Me.name}, atualmente estou no quarto semestre da
             faculdade de Data Science and Artificial Intelligence pelo centro
             universitário IESB.
           </span>
