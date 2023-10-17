@@ -50,7 +50,7 @@ export default function Footer({
                 message: "a mensagem é obrigatória.",
               },
             })}
-            className={`mt-2 h-40 w-full resize-none rounded-lg border-none bg-gray-50 p-2 outline-none transition-all duration-200 placeholder:opacity-95   ${
+            className={`mt-2 h-40 w-full resize-none rounded-lg border-none bg-gray-10 p-2 outline-none transition-all duration-200 placeholder:opacity-95   ${
               errors.message
                 ? "ring-2 ring-red-500"
                 : "focus:ring-2 focus:ring-blue-800"
