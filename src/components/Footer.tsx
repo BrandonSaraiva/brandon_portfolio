@@ -37,7 +37,7 @@ export default function Footer({
           onMouseEnter={!isMobile ? footerEnter : () => {}}
           onMouseLeave={!isMobile ? footerLeave : () => {}}
           onSubmit={handleSubmit(handleSubmitMessage)}
-          className="flex w-full max-w-5xl flex-col items-center justify-center rounded-2xl bg-gray-500 px-5 py-8 text-gray-900 lg:px-8"
+          className="flex w-full max-w-5xl flex-col items-center justify-center rounded-2xl bg-gray-300 px-5 py-8 text-gray-900 lg:px-8"
         >
           <p className="text-md font-jetbrains uppercase">Enviar mensagem</p>
           <span className="mb-5 mt-5 max-w-md text-center text-2xl font-semibold lg:text-4xl">
@@ -88,7 +88,7 @@ export default function Footer({
       <div
         onMouseEnter={!isMobile ? footerEnter : () => {}}
         onMouseLeave={!isMobile ? footerLeave : () => {}}
-        className="flex w-full flex-col items-center rounded-2xl bg-gray-500 px-5 pb-5 pt-14  lg:px-20 lg:pb-10"
+        className="flex w-full flex-col items-center rounded-2xl bg-gray-300 px-5 pb-5 pt-14  lg:px-20 lg:pb-10"
       >
         <div className="flex w-full items-center justify-between">
           <div className="hidden w-full max-w-lg gap-3 lg:flex lg:justify-around lg:gap-0">
