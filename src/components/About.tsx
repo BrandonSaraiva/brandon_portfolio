@@ -97,9 +97,7 @@ export const About = ({ isInView }: any) => {
           <span className="text-4xl font-semibold text-white">Atualmente</span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            No atual momento estou estudando bastante sobre Bot's , Web Scraping
-            e automação, utilizando bibliotecas como Selenium, Beautiful Soup,
-            pandas, PyAutoGUI e Bot API.
+            No atual momento estou me desenvolvendo no conjunto de ferramentas ELK (Elasticsearch, Logstash, Kibana) para o tratamento dos dados e desenvolvimento de dashboards.
           </span>
         </motion.p>
       </div>
