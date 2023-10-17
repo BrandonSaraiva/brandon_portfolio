@@ -177,11 +177,11 @@ export default function Home() {
   }, []);
   const sliderItems = [
     "Automação",
-    "Node Js",
-    "Web",
+    "Elastic Search",
+    "Kibana",
     "Ciência de dados",
-    "Inteligência Artificial",
-    "Machine Learning",
+    "NoSQL",
+    "Logstash",
     "Python",
     "Web Scraping",
     "Linguagem C",
@@ -189,8 +189,8 @@ export default function Home() {
     "SAS",
     "Pandas",
     "Power BI",
-    "Matplotlib",
-    "PYAUTOGUI",
+    "Data Analysis",
+    "Dashboards",
     "SQL",
   ];
   return (
