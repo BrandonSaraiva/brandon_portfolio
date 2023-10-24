@@ -118,7 +118,7 @@ export default function Loader({
             variants={animate2}
             onAnimationComplete={() => (setText2("hidden"), setText3("show"))}
           >
-            Olá Prazer 👋🏻 😄
+            Hello, nice to meet you. 👋🏻 😄
           </motion.span>
           <motion.span
             className="absolute top-1/2 text-xl text-white md:text-3xl"
@@ -127,7 +127,7 @@ export default function Loader({
             variants={animate3}
             onAnimationComplete={() => (setText3("hidden"), showLoading())}
           >
-            Seja Bem vindo ao meu portfolio 😄
+            Welcome to my portfolio 😄
           </motion.span>
         </motion.div>
       )}
