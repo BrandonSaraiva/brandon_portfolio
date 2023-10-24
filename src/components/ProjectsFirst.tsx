@@ -20,15 +20,15 @@ export default function ProjectsFirst({
       className="z-10 mt-48  flex w-full max-w-7xl flex-col gap-20  px-6"
     >
       <div className="flex flex-col">
-        <span className="font-light uppercase">Trabalhos</span>
+        <span className="font-light uppercase">Works</span>
         <span className="mt-2 font-sans text-4xl font-semibold">
-          Ultimos projetos
+          Latest projects
         </span>
         <small className="mt-4 max-w-md font-sans text-base text-white/90">
-          Projetos recentes, nos quais apliquei minhas habilidades como
-          cientista de dados. Cada projeto representou uma oportunidade de
-          aprendizado e aplicação prática de conceitos-chave, resultando em
-          soluções funcionais e inovadoras.
+          Recent projects, in which I applied my skills as
+           data scientist. Each project represented an opportunity to
+           learning and practical application of key concepts, resulting in
+           functional and innovative solutions.
         </small>
       </div>
 
@@ -52,7 +52,7 @@ export default function ProjectsFirst({
                 rel="noreferrer"
                 className="mt-5 cursor-none text-sm "
               >
-                ver github
+                see github
               </a>
             </div>
             <a
