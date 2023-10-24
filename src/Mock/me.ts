@@ -19,12 +19,12 @@ interface Me {
 
 export const Me: Me = {
   name: "Brandon Cardoso",
-  role: "Estudante de Ciência de Dados e Inteligência Artificial",
+  role: "Data Science and Artificial Intelligence Student",
   email: "devbrandondev@gmail.com",
   linkedin: "https://www.linkedin.com/in/brandon-saraiva-006a4823b/",
   youtube: "https://www.youtube.com/channel/UC816MtD2bxL3uoIV0zdaneA",
   gitHub: "https://github.com/BrandonSaraiva",
-  about: `Atualmente estou no terceiro semestre da faculdade de Data Science and Artificial Intelligence pelo centro universitário IESB. Descobri na área de Ciência de Dados uma forma de unir minha paixão por tecnologia e minha curiosidade em entender o mundo. Hoje na era da (des)informação o profissional de Dados se faz cada vez mais importante seja para empresas, governos ou até mesmo para o cidadão comum, por isso me sinto honrado em poder contribuir de alguma forma para o desenvolvimento da sociedade através dessa área. No atual momento estou me desenvolvendo no conjunto de ferramentas ELK (Elasticsearch, Logstash, Kibana) para o tratamento dos dados e desenvolvimento de dashboards.`,
+  about: `I am currently in the fourth semester of the Data Science and Artificial Intelligence college at the IESB university center. I discovered in the area of Data Science a way to combine my passion for technology and my curiosity in understanding the world. Today in the era of (mis)information, Data professionals are becoming increasingly important, whether for companies, governments or even ordinary citizens, which is why I feel honored to be able to contribute in some way to the development of society through this area. . I am currently developing the ELK toolset (Elasticsearch, Logstash, Kibana) for data processing and dashboard development.`,
   howCanIHelp: `Ja fiz diversos projetos em diferentes áreas da programação, desde o desenvolvimento web utilizando HTML, CSS e JavaScript, criação de aplicativos utilizando KIVY, até a construção e tratamento de bancos de dados utilizando SQL e Python. Ter tido contato com diversas tecnologias de áreas diferentes me ajudou a ter uma base sólida seja para aprender coisas novas ou para começar/continuar um projeto. Gosto de trabalhos em equipe tanto quanto gosto de trabalhos individuais, não tenho medo de fazer perguntas e procuro sempre entender minuciosamente o que deve ser feito para poder fazer um trabalho bem feito além de poder ajudar quem ainda não entendeu`,
   image: "https://brandonsaraiva.github.io/devportfolio/images/avatar.jpeg",
   projects: [
@@ -32,7 +32,7 @@ export const Me: Me = {
       name: "Bot Telegram LotoFácil",
       link: "https://github.com/BrandonSaraiva/Projeto-bot-telegram-Lotof-cil",
       description:
-        "Um bot em Python que utiliza dados históricos de sorteios da loteria para analisar os números mais frequentemente sorteados em uma determinada data ao longo dos anos. Com base nessa análise, o bot gera uma previsão dos números com maior probabilidade de serem sorteados no dia atual. Essa ferramenta permite aumentar suas chances de acertar os números da loteria.",
+        "A Python bot that uses historical lottery drawing data to analyze the most frequently drawn numbers on a given date over the years. Based on this analysis, the bot generates a prediction of the numbers most likely to be drawn on the current day. This tool allows you to have a good view of the 'luckiest' numbers in the games.",
       tags: ["Google colab", "Telegram", "Bot", "Web Scraping"],
       thumbnail: "/lottery.jpeg",
     },
@@ -40,58 +40,58 @@ export const Me: Me = {
       name: "Bot Telegram Home pc",
       link: "https://github.com/BrandonSaraiva/Bot-Faz-Tudo",
       description:
-        "App em Python para automatizar tarefas diárias. Com comandos simples, posso receber boletos, enviar arquivos para o Google Drive e acessar informações úteis, como previsão do tempo e últimos e-mails. Além disso, implementei funcionalidades para controlar remotamente o PC e reprodução de vídeos no YouTube.",
+        "Python app to automate daily tasks. With simple commands, I can receive invoices, send files to Google Drive and access useful information, such as the weather forecast and latest emails. Additionally, I implemented features to remotely control the PC and play videos on YouTube.",
       tags: ["Google colab", "Telegram", "Bot", "Web Scraping"],
       thumbnail:
         "https://wallpapers.com/images/high/antivirus-gtca5r11sslm65nl.webp",
     },
     {
-      name: "Site cartoes presente",
+      name: "Gift card website",
       link: "https://github.com/BrandonSaraiva/Site-Cartoes",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
       description:
-        "Um site que permite a geração de cartões presente personalizados de forma rápida e fácil. O site está conectado a uma base de dados criada com MongoDB, proporcionando um controle eficiente sobre os cartões registrados. Com essa ferramenta simples, é possível criar cartões presente únicos para diversas ocasiões, garantindo uma experiência especial para quem os recebe.",
+        "A website that allows you to generate personalized gift cards quickly and easily. The website is connected to a database created with MongoDB, providing efficient control over registered cards. With this simple tool, you can create control of gift cards registered by your company. The website runs through an executable, which allows it to be accessed only locally on the computer running the server, thus providing greater security.",
       thumbnail: "credit-card.jpeg",
     },
 
     {
-      name: "Projeto eleicoes gerais - IESB",
+      name: "General elections project - IESB",
       link: "https://github.com/BrandonSaraiva/Projeto-Ciencia-de-Dados-IESB",
       tags: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
       description:
-        "Desenvolvi um projeto de análise descritiva dos dados das Eleições Gerais Ordinárias no Brasil em 2022, focado no Distrito Federal. Utilizamos PostgreSQL como banco de dados e Python/SAS para a análise. identificamos padrões, tendências e insights relevantes nos resultados eleitorais.",
+        "I developed a descriptive analysis project of data from the Ordinary General Elections in Brazil in 2022, focused on the Federal District. We use PostgreSQL as the database and Python/SAS for the analysis. We have identify relevant patterns, trends and insights in electoral results.",
       thumbnail:
         "https://brandonsaraiva.github.io/devportfolio/images/thumbs/facul.jpg",
     },
     {
-      name: "Aplicativo pomodoro para celular",
+      name: "Pomodoro mobile app",
       link: "https://github.com/BrandonSaraiva/APK-POMODORO",
       description:
-        "Aplicativo de Pomodoro personalizado para uso pessoal que criei após ficar frustrado com opções disponíveis na Play Store. A interface é propositalmente única e simples. O aplicativo está disponível para download em formato .pkg para uso no celular. Transformar o código Python em um executável .pkg foi desafiador, mas após aproximadamente 9 horas de trabalho, consegui fazer funcionar.",
+        "Custom Pomodoro app for personal use that I created after becoming frustrated with options available on the Play Store. The interface is purposefully unique and simple. The application is available for download in .pkg format for use on your cell phone. Turning the Python code into a .pkg executable was challenging, but after approximately 9 hours of work, I managed to get it working.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "timer.jpeg",
     },
     {
-      name: "Projeto internacoes e obitos - IESB",
+      name: "Hospitalizations and deaths project - IESB",
       link: "https://github.com/BrandonSaraiva/pi3-internacoes",
       description:
-        "Aplicação que investiga a relação entre internações, duração da estadia hospitalar e mortalidade. Utilizando dados públicos do Ministério da Saúde para analisar o número de internações, mortes e a duração média da hospitalização por procedimento em cada município brasileiro.",
+        "Application that investigates the relationship between hospitalizations, length of hospital stay and mortality. Using public data from the Ministry of Health to analyze the number of hospitalizations, deaths and the average duration of hospitalization per procedure in each Brazilian municipality.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "/hospital.jpeg",
     },
     {
-      name: "Projeto webscraping pi3 - IESB",
+      name: "pi3 webscraping project - IESB,
       link: "https://github.com/BrandonSaraiva/data_science_bot",
       description:
-        "Automatizacão de processos de análise de dados. Utilizei diversas bibliotecas, como pyautogui, selenium e pandas. O bot gera slides com base em informações fornecidas e cria gráficos a partir de um banco de dados baixado. O projeto inclui interações sonoras e acesso a recursos que exigem login. Um destaque é a utilização do Google Colab para manipulação dos dados.",
+        "Automation of data analysis processes. I used several libraries, such as pyautogui, selenium and pandas. The bot generates slides based on information provided and creates charts from a downloaded database. The project includes sound interactions where it shows the data generated and explains what it is doing at the current moment.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "/web.jpg",
     },
    {
-      name: "Envio automatizado de mensagens",
+      name: "Automated message sending",
       link: "https://github.com/BrandonSaraiva/automated_messages",
       description:
-        "Este projeto teve como objetivo automatizar o envio de mensagens em horários programados e permitir o agendamento para qualquer dia desejado. Além disso, ele também realiza a coleta diária das moedas na plataforma Shopee. A proposta é oferecer uma solução simples e eficiente para essas tarefas específicas. Com esse bot, é possível automatizar o processo de envio de mensagens e garantir que as moedas sejam coletadas diariamente, sem a necessidade de intervenção manual.",
+        "This project aimed to automate the sending of messages at scheduled times and allow scheduling for any desired day. In addition, it also collects coins daily on the Shopee platform. The proposal is to offer a simple and efficient solution for these specific tasks. With this bot, it is possible to automate the message sending process and ensure that coins are collected daily, without the need for manual intervention.",
       tags: ["Python", "Kivy", "Plyer"],
       thumbnail: "https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.webp",
     }
