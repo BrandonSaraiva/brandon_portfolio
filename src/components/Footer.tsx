@@ -39,15 +39,15 @@ export default function Footer({
           onSubmit={handleSubmit(handleSubmitMessage)}
           className="flex w-full max-w-5xl flex-col items-center justify-center rounded-2xl bg-gray-50 px-5 py-8 text-gray-900 lg:px-8"
         >
-          <p className="text-md font-jetbrains uppercase">Enviar mensagem</p>
+          <p className="text-md font-jetbrains uppercase">Send Message</p>
           <span className="mb-5 mt-5 max-w-md text-center text-2xl font-semibold lg:text-4xl">
-            Gostaria de entrar em contato ?
+            Would you like to get in touch?
           </span>
           <textarea
             {...register("message", {
               required: {
                 value: true,
-                message: "a mensagem é obrigatória.",
+                message: "the message is mandatory.",
               },
             })}
             className={`mt-2 h-40 w-full resize-none rounded-lg border-none bg-gray-10 p-2 outline-none transition-all duration-200 placeholder:opacity-95   ${
@@ -55,7 +55,7 @@ export default function Footer({
                 ? "ring-2 ring-red-500"
                 : "focus:ring-2 focus:ring-blue-800"
             }`}
-            placeholder="Digite sua mensagem"
+            placeholder="Type your message"
           />
           <div className=" flex w-full items-start justify-between">
             <span className="mt-2 text-xs text-red-500">
@@ -66,13 +66,13 @@ export default function Footer({
               type="submit"
               className="lg:text-md mt-5 hidden rounded-lg bg-black px-4 py-1 font-alt font-semibold text-white lg:flex lg:px-7 lg:py-2"
             >
-              Enviar mensagem
+              Send Message
             </button>
             <button
               type="submit"
               className="lg:text-md mt-5 flex rounded-lg bg-black px-4 py-1 font-alt font-semibold text-white lg:hidden lg:px-7 lg:py-2"
             >
-              Enviar
+              Send
             </button>
           </div>
         </form>
@@ -193,19 +193,19 @@ export default function Footer({
               href="#top"
               className="md:text-md flex cursor-none gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50"
             >
-              Inicio
+              Top of page
             </a>
             <a
               href="#about"
               className="md:text-md hidden cursor-none  gap-2 text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
             >
-              Sobre
+              About
             </a>
             <a
               href="#projects"
               className="md:text-md hidden cursor-none gap-2  text-sm text-black/80 transition-colors duration-200  hover:text-black/50 lg:flex"
             >
-              Projetos
+              Projects
             </a>
           </div>
         </div>
