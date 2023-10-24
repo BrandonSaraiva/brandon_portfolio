@@ -31,7 +31,7 @@ export default function Header({
             >
               <li className="relative flex items-center justify-center gap-1 font-semibold ">
                 <HomeIcon />
-                Inicio
+                Top of Page
               </li>
             </a>
           </div>
@@ -43,7 +43,7 @@ export default function Header({
               }`}
             >
               <li className="relative flex items-center justify-center gap-1 font-semibold ">
-                <UserIcon /> Sobre
+                <UserIcon /> About
               </li>
             </a>
           </div>
@@ -67,7 +67,7 @@ export default function Header({
               }`}
             >
               <li className="relative flex items-center justify-center gap-1 font-semibold ">
-                <MessageIcon /> Contato
+                <MessageIcon /> Contact
               </li>
             </a>
           </div>
@@ -118,28 +118,28 @@ export default function Header({
               href="#top"
               className="flex w-full items-center justify-center rounded-md p-2 transition-all duration-150 hover:bg-black/5 "
             >
-              Inicio
+              Top Of Page
             </a>
             <a
               href="#about"
               onClick={() => setOpenMenu(false)}
               className="flex w-full items-center justify-center rounded-md p-2 transition-all duration-150 hover:bg-black/5 "
             >
-              Sobre
+              About
             </a>
             <a
               href="#projects"
               onClick={() => setOpenMenu(false)}
               className="flex w-full items-center justify-center rounded-md p-2 transition-all duration-150 hover:bg-black/5 "
             >
-              Projetos
+              Projects
             </a>
             <a
               href="#contact"
               onClick={() => setOpenMenu(false)}
               className="flex w-full items-center justify-center rounded-md p-2 transition-all duration-150 hover:bg-black/5 "
             >
-              Contato
+              Contact
             </a>
           </div>
         </div>
