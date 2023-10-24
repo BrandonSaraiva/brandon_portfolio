@@ -176,15 +176,15 @@ export default function Home() {
     }
   }, []);
   const sliderItems = [
-    "Automação",
+    "Automation",
     "Elastic Search",
     "Kibana",
-    "Ciência de dados",
+    "Data Science",
     "NoSQL",
     "Logstash",
     "Python",
     "Web Scraping",
-    "Linguagem C",
+    "C Language",
     "Java",
     "SAS",
     "Pandas",
@@ -202,7 +202,7 @@ export default function Home() {
     >
       <NextSeo
         title="Brandon Cardoso"
-        description="Portfolio pessoal Brandon Cardoso"
+        description="Personal portfolio Brandon Cardoso"
         openGraph={{
           type: "website",
           locale: "pt_BR",
@@ -214,7 +214,7 @@ export default function Home() {
               url: "/cover.jpeg",
               width: 800,
               height: 600,
-              alt: "Portfolio pessoal",
+              alt: "Personal portfolio",
             },
           ],
         }}
