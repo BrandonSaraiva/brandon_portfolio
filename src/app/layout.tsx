@@ -14,7 +14,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Brandon Cardoso",
-  description: "Portfolio pessoal Brandon Cardoso",
+  description: "Personal portfolio Brandon Cardoso",
 };
 
 export default function RootLayout({
