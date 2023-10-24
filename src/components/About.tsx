@@ -62,13 +62,13 @@ export const About = ({ isInView }: any) => {
           className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0 bg-transparent"
         >
           <span className="text-4xl font-semibold text-white">
-            Olá visitante prazer <span className="text-xl"> 👋🏻 😄</span>
+            Hello visitor, nice to see you. <span className="text-xl"> 👋🏻 😄</span>
           </span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            Me chamo {Me.name}, atualmente estou no quarto semestre da
-            faculdade de Data Science and Artificial Intelligence pelo centro
-            universitário IESB.
+            My name is {Me.name}, I'm currently in the fourth semester of
+             faculty of Data Science and Artificial Intelligence at the center
+             university IESB.
           </span>
         </motion.p>
         <motion.p
@@ -79,12 +79,12 @@ export const About = ({ isInView }: any) => {
           className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-8 text-white lg:w-fit lg:px-0"
         >
           <span className="text-4xl font-semibold text-white">
-            Sobre mim 👨🏻‍💻
+            About me 👨🏻‍💻
           </span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            Descobri na área de Ciência de Dados uma forma de unir minha paixão por tecnologia e minha curiosidade em entender o mundo. 
-            Hoje na era da (des)informação o profissional de Dados se faz cada vez mais importante seja para empresas, governos ou até mesmo para o cidadão comum, por isso me sinto honrado em poder contribuir de alguma forma para o desenvolvimento da sociedade através dessa área. 
+           I discovered in the area of Data Science a way to combine my passion for technology and my curiosity in understanding the world.
+             Today in the era of (mis)information, Data professionals are becoming increasingly important, whether for companies, governments or even ordinary citizens, which is why I feel honored to be able to contribute in some way to the development of society through this area. .
           </span>
         </motion.p>
         <motion.p
@@ -97,7 +97,7 @@ export const About = ({ isInView }: any) => {
           <span className="text-4xl font-semibold text-white">Atualmente</span>
           <br />
           <span className="mt-2 flex max-w-3xl text-lg">
-            No atual momento estou me desenvolvendo no conjunto de ferramentas ELK (Elasticsearch, Logstash, Kibana) para o tratamento dos dados e desenvolvimento de dashboards.
+            I am currently developing the ELK toolset (Elasticsearch, Logstash, Kibana) for data processing and dashboard development.
           </span>
         </motion.p>
       </div>
